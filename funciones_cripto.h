@@ -30,5 +30,6 @@ void encryptDecryptXor(std::string user_string,  std::string fichero_salida);   
 void complete_program(std::string texto, std::string metodo_encriptado, std::string operacion,  std::string fichero_salida); ///es la unión de las 3 funciones anteriores. Dependiendo de los parámetros que de el usuario, va a ejecutar una de las 3. De esta manera creo que queda más limpio el fichero main.
 std::string char_pointer_to_string(char* caracter, std::string to_store_string); ///es una función simple para pasar el argv[] a string, que es lo que piden las funciones anteriores.
 void usage(int argc, char* argv[]); ///manual para la ejecución del programa.
+void word_counter(std::string text_file);
 
 

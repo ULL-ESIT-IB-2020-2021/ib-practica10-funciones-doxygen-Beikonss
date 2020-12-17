@@ -19,6 +19,8 @@ int main(int argc, char* argv[]){
     }
   }
 
+  word_counter(fichero_entrada);
+
   return 0;
 
 }

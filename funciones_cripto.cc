@@ -189,3 +189,27 @@ void usage(int argc, char* argv[]) {        //Función para imprimerle al usuari
   }
 
 }
+
+void word_counter(std::string textfile){
+
+  std::vector<std::string> vector_to_analise{};
+  std::string line;
+  std::ifstream myfile(textfile);
+  char compare;
+
+
+ if (myfile.is_open())
+  {
+    while ( getline (myfile,line) )
+    {
+      if(line[0] == 'u'){
+      vector_to_analise.push_back(line);
+      }
+    }
+    myfile.close();
+  }
+
+  std::cout << "El numero de letras 'u' que hay es de: " << vector_to_analise.size()+1;
+
+
+}
